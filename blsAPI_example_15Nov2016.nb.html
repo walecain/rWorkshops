@@ -174,16 +174,9 @@ $(document).ready(function () {
 
 <!-- rnb-text-begin -->
 <p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
-<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Cmd+Shift+Enter</em>.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuYGBgIn0= -->
-<pre class="r"><code>plot(cars)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Cmd+Option+I</em>.</p>
-<p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Cmd+Shift+K</em> to preview the HTML file).</p>
+<div id="add-a-new-chunk-by-clicking-the-insert-chunk-button-on-the-toolbar-or-by-pressing-cmdoptioni." class="section level1">
+<h1>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Cmd+Option+I</em>.</h1>
+</div>
 <div id="installing-blsapi" class="section level1">
 <h1>Installing blsAPI</h1>
 <!-- rnb-text-end -->
@@ -217,14 +210,10 @@ The downloaded binary packages are in
 <h1>loading packages for use</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSAoYmxzQVBJKVxuYGBgIn0= -->
-<pre class="r"><code>library (blsAPI)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDigJhibHNBUEnigJkgd2FzIGJ1aWx0IHVuZGVyIFIgdmVyc2lvbiAzLjMuMlxuIn0= -->
-<pre><code>package ‘blsAPI’ was built under R version 3.3.2</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSAocmpzb24pXG5gYGAifQ== -->
-<pre class="r"><code>library (rjson)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSAoYmxzQVBJKVxubGlicmFyeSAocmpzb24pXG5saWJyYXJ5KGdncGxvdDIpXG5gYGAifQ== -->
+<pre class="r"><code>library (blsAPI)
+library (rjson)
+library(ggplot2)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -592,7 +581,7 @@ df</code></pre>
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgpUcnkgZXhlY3V0aW5nIHRoaXMgY2h1bmsgYnkgY2xpY2tpbmcgdGhlICpSdW4qIGJ1dHRvbiB3aXRoaW4gdGhlIGNodW5rIG9yIGJ5IHBsYWNpbmcgeW91ciBjdXJzb3IgaW5zaWRlIGl0IGFuZCBwcmVzc2luZyAqQ21kK1NoaWZ0K0VudGVyKi4gCgpgYGB7cn0KcGxvdChjYXJzKQpgYGAKCkFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDbWQrT3B0aW9uK0kqLgoKV2hlbiB5b3Ugc2F2ZSB0aGUgbm90ZWJvb2ssIGFuIEhUTUwgZmlsZSBjb250YWluaW5nIHRoZSBjb2RlIGFuZCBvdXRwdXQgd2lsbCBiZSBzYXZlZCBhbG9uZ3NpZGUgaXQgKGNsaWNrIHRoZSAqUHJldmlldyogYnV0dG9uIG9yIHByZXNzICpDbWQrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4KCiNJbnN0YWxsaW5nIGJsc0FQSQoKYGBge3J9Cmluc3RhbGwucGFja2FnZXMoJ2Jsc0FQSScpCmluc3RhbGwucGFja2FnZXMoJ3Jqc29uJykKYGBgCiMgbG9hZGluZyBwYWNrYWdlcyBmb3IgdXNlCmBgYHtyfQpsaWJyYXJ5IChibHNBUEkpCmxpYnJhcnkgKHJqc29uKQpsaWJyYXJ5KGdncGxvdDIpCmBgYAojIENhbGxpbmcgZGF0YQpgYGB7cn0KT3JXYWdlIDwtIGJsc0FQSSgnQ0lVMTAxMDAwMDAwMDAwMEEnKQpqc29uIDwtIGZyb21KU09OKE9yV2FnZSkKanNvbgpgYGAKYGBge3J9CmRmIDwtIGRhdGEuZnJhbWUoeWVhcj1jaGFyYWN0ZXIoKSwKICAgICAgICAgICAgICAgICBwZXJpb2Q9Y2hhcmFjdGVyKCksIAogICAgICAgICAgICAgICAgIHBlcmlvZE5hbWU9Y2hhcmFjdGVyKCksCiAgICAgICAgICAgICAgICAgdmFsdWU9Y2hhcmFjdGVyKCksCiAgICAgICAgICAgICAgICAgc3RyaW5nc0FzRmFjdG9ycz1GQUxTRSkgCgppIDwtIDAKZm9yKGQgaW4ganNvbiRSZXN1bHRzJHNlcmllc1tbMV1dJGRhdGEpewogIGkgPC0gaSArIDEKICBkZltpLF0gPC0gdW5saXN0KGQpCn0KCmRmCmBgYApgYGB7cn0KT3JXYWdlIDwtIGJsc0FQSSgnTFVVMDIwNDQ2Njg0MScpCmpzb24gPC0gZnJvbUpTT04oT3JXYWdlKQpqc29uCmBgYAoKYGBge3J9CmRmIDwtIGRhdGEuZnJhbWUoeWVhcj1jaGFyYWN0ZXIoKSwKICAgICAgICAgICAgICAgICBwZXJpb2Q9Y2hhcmFjdGVyKCksIAogICAgICAgICAgICAgICAgIHBlcmlvZE5hbWU9Y2hhcmFjdGVyKCksCiAgICAgICAgICAgICAgICAgdmFsdWU9Y2hhcmFjdGVyKCksCiAgICAgICAgICAgICAgICAgc3RyaW5nc0FzRmFjdG9ycz1GQUxTRSkgCgppIDwtIDAKZm9yKGQgaW4ganNvbiRSZXN1bHRzJHNlcmllc1tbMV1dJGRhdGEpewogIGkgPC0gaSArIDEKICBkZltpLF0gPC0gdW5saXN0KGQpCn0KCmRmCmBgYAoK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKVGhpcyBpcyBhbiBbUiBNYXJrZG93bl0oaHR0cDovL3JtYXJrZG93bi5yc3R1ZGlvLmNvbSkgTm90ZWJvb2suIFdoZW4geW91IGV4ZWN1dGUgY29kZSB3aXRoaW4gdGhlIG5vdGVib29rLCB0aGUgcmVzdWx0cyBhcHBlYXIgYmVuZWF0aCB0aGUgY29kZS4gCgojIEFkZCBhIG5ldyBjaHVuayBieSBjbGlja2luZyB0aGUgKkluc2VydCBDaHVuayogYnV0dG9uIG9uIHRoZSB0b29sYmFyIG9yIGJ5IHByZXNzaW5nICpDbWQrT3B0aW9uK0kqLgoKI0luc3RhbGxpbmcgYmxzQVBJCgpgYGB7cn0KaW5zdGFsbC5wYWNrYWdlcygnYmxzQVBJJykKaW5zdGFsbC5wYWNrYWdlcygncmpzb24nKQpgYGAKIyBsb2FkaW5nIHBhY2thZ2VzIGZvciB1c2UKYGBge3J9CmxpYnJhcnkgKGJsc0FQSSkKbGlicmFyeSAocmpzb24pCmxpYnJhcnkoZ2dwbG90MikKYGBgCiMgQ2FsbGluZyBkYXRhCmBgYHtyfQpPcldhZ2UgPC0gYmxzQVBJKCdDSVUxMDEwMDAwMDAwMDAwQScpCmpzb24gPC0gZnJvbUpTT04oT3JXYWdlKQpqc29uCmBgYApgYGB7cn0KZGYgPC0gZGF0YS5mcmFtZSh5ZWFyPWNoYXJhY3RlcigpLAogICAgICAgICAgICAgICAgIHBlcmlvZD1jaGFyYWN0ZXIoKSwgCiAgICAgICAgICAgICAgICAgcGVyaW9kTmFtZT1jaGFyYWN0ZXIoKSwKICAgICAgICAgICAgICAgICB2YWx1ZT1jaGFyYWN0ZXIoKSwKICAgICAgICAgICAgICAgICBzdHJpbmdzQXNGYWN0b3JzPUZBTFNFKSAKCmkgPC0gMApmb3IoZCBpbiBqc29uJFJlc3VsdHMkc2VyaWVzW1sxXV0kZGF0YSl7CiAgaSA8LSBpICsgMQogIGRmW2ksXSA8LSB1bmxpc3QoZCkKfQoKZGYKYGBgCmBgYHtyfQpPcldhZ2UgPC0gYmxzQVBJKCdMVVUwMjA0NDY2ODQxJykKanNvbiA8LSBmcm9tSlNPTihPcldhZ2UpCmpzb24KYGBgCgpgYGB7cn0KZGYgPC0gZGF0YS5mcmFtZSh5ZWFyPWNoYXJhY3RlcigpLAogICAgICAgICAgICAgICAgIHBlcmlvZD1jaGFyYWN0ZXIoKSwgCiAgICAgICAgICAgICAgICAgcGVyaW9kTmFtZT1jaGFyYWN0ZXIoKSwKICAgICAgICAgICAgICAgICB2YWx1ZT1jaGFyYWN0ZXIoKSwKICAgICAgICAgICAgICAgICBzdHJpbmdzQXNGYWN0b3JzPUZBTFNFKSAKCmkgPC0gMApmb3IoZCBpbiBqc29uJFJlc3VsdHMkc2VyaWVzW1sxXV0kZGF0YSl7CiAgaSA8LSBpICsgMQogIGRmW2ksXSA8LSB1bmxpc3QoZCkKfQoKZGYKYGBgCgo=</div>
 
 
 
